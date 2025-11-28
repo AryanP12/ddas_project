@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; text-align: center; background-color: #f9f9f9; }
+    h2 { color: #d9534f; margin-top: 0; }
+    .info { background: #fff; border: 1px solid #ddd; padding: 15px; margin: 15px 0; text-align: left; border-radius: 5px; font-size: 13px;}
+    button { padding: 10px 20px; cursor: pointer; border: none; border-radius: 4px; font-size: 14px; margin: 5px; }
+    #btn-existing { background-color: #5cb85c; color: white; font-weight: bold; }
+    #btn-download { background-color: #999; color: white; }
+    #btn-existing:hover { background-color: #4cae4c; }
+    #btn-download:hover { background-color: #777; }
+  </style>
+</head>
+<body>
+  <h2>Duplicate Detected!</h2>
+  <p>This file appears to already exist in the repository.</p>
+  
+  <div class="info">
+    <strong>File:</strong> <span id="filename">Loading...</span><br><br>
+    <strong>Found at:</strong> <span id="location">Loading...</span>
+  </div>
+
+  <button id="btn-existing">Use Existing (Cancel Download)</button>
+  <button id="btn-download">Download Anyway</button>
+
+  <script src="alert.js"></script>
+</body>
+</html>
